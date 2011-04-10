@@ -100,7 +100,7 @@ if (!$_POST)
    if (!$fp) {
    
    $mail_From = "From: ipntest@sureprojects.com";
-   $mail_To = "saulius.zukauskas@gmail.com";
+   $mail_To = "saulius@x.com";
    $mail_Subject = "HTTP ERROR while confirming IPN";
    $mail_Body = "Failed open socket to PayPal server";
 
@@ -121,7 +121,7 @@ if (!$_POST)
    // process payment
 
    $mail_From = "From: ipntest@sureprojects.com";
-   $mail_To = "saulius.zukauskas@gmail.com";
+   $mail_To = "saulius@x.com";
    $mail_Subject = "VERIFIED IPN";
    $mail_Body = $_req;
 
@@ -131,7 +131,7 @@ if (!$_POST)
      // log for manual investigation
 
      $mail_From = "From: ipntest@sureprojects.com";
-     $mail_To = "saulius.zukauskas@gmail.com";
+     $mail_To = "saulius@x.com";
      $mail_Subject = "INVALID IPN";
      $mail_Body = $_req;
 
